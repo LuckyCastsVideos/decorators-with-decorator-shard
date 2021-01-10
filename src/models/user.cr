@@ -6,6 +6,8 @@ class User < BaseModel
 
   table do
     column email : String
+    column first_name : String?
+    column last_name : String?
     column encrypted_password : String
   end
 
