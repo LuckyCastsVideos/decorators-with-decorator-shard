@@ -1,0 +1,36 @@
+{
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@fontsource/inter": "^4.1.0",
+    "@rails/ujs": "^6.1.1",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/typography": "^0.3.1",
+    "postcss": "^8.2.3",
+    "stimulus": "^2.0.0",
+    "tailwindcss": "^2.0.2",
+    "turbolinks": "^5.2.0"
+  },
+  "scripts": {
+    "heroku-postbuild": "yarn prod",
+    "dev": "mix",
+    "watch": "mix watch",
+    "prod": "mix --production"
+  },
+  "devDependencies": {
+    "@babel/compat-data": "^7.12.7",
+    "@types/node": "^14.14.20",
+    "@types/webpack-env": "^1.16.0",
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "browser-sync": "^2.26.7",
+    "compression-webpack-plugin": "^7.1.1",
+    "eslint": "^7.17.0",
+    "laravel-mix": "^6.0.9",
+    "prettier": "^2.2.1",
+    "resolve-url-loader": "3.1.2",
+    "ts-loader": "^8.0.14",
+    "typescript": "^4.1.3"
+  }
+}
