@@ -14,4 +14,12 @@ class User < BaseModel
   def emailable : Carbon::Address
     Carbon::Address.new(email)
   end
+
+  def display_name
+    if first_name || last_name
+      [first_name, last_name].compact.join(" ")
+    else
+      email
+    end
+  end
 end

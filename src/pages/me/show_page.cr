@@ -18,16 +18,8 @@ class Me::ShowPage < MainLayout
       end
 
       div class: "px-4 py-5 sm:p-6" do
-        h3 "Display name: #{user_display_name}"
+        h3 "Display name: #{current_user.display_name}"
       end
-    end
-  end
-
-  private def user_display_name
-    if current_user.first_name || current_user.last_name
-      [current_user.first_name, current_user.last_name].compact.join(" ")
-    else
-      current_user.email
     end
   end
 end

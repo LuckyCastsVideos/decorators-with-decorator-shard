@@ -14,7 +14,7 @@ class Shared::Navbar < BaseComponent
 
           div class: "-mr-2 flex items-center sm:hidden", data_action: "click->toggle#toggle" do
             if (signed_in_user = user)
-              link signed_in_user.email, to: Me::Show, class: "text-sm font-medium text-gray-900 hover:text-gray-600"
+              link signed_in_user.display_name, to: Me::Show, class: "text-sm font-medium text-gray-900 hover:text-gray-600"
             end
 
             render_hamburger_icon
