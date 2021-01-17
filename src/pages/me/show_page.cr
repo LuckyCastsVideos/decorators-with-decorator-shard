@@ -13,8 +13,8 @@ class Me::ShowPage < MainLayout
         h3 "Email: #{current_user.email}"
         h3 "First name: #{current_user.first_name || "Not set"}"
         h3 "Last name: #{current_user.last_name || "Not set"}"
-        h3 "Created at: #{current_user.created_at.to_s("%Y-%m-%d")}"
-        h3 "Updated at: #{current_user.updated_at.to_s("%Y-%m-%d")}"
+        h3 "Created at: #{current_user.created_at}"
+        h3 "Updated at: #{current_user.updated_at}"
       end
 
       div class: "px-4 py-5 sm:p-6" do
