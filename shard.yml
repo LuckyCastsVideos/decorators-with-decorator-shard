@@ -2,7 +2,7 @@ name: decorator_shard
 version: 0.1.0
 
 authors:
-  - your-name-here <your-email-here>
+  - Stephen Dolan <stephen@luckycasts.com>
 
 targets:
   decorator_shard:
