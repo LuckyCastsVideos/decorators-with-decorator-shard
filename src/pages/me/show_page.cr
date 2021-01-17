@@ -13,8 +13,14 @@ class Me::ShowPage < MainLayout
         h3 "Email: #{current_user.email}"
         h3 "First name: #{current_user.first_name || "Not set"}"
         h3 "Last name: #{current_user.last_name || "Not set"}"
-        h3 "Created at: #{current_user.created_at}"
-        h3 "Updated at: #{current_user.updated_at}"
+        creation_date = current_user.created_at
+        decorated_date = TimeDecorator.new(current_user.created_at)
+        date_string = decorated_date.pretty_date
+
+        h3 "Created at: #{date_string}"
+        h3 "Created at (hours): #{decorated_date.hour}"
+
+        h3 "Updated at: #{TimeDecorator.new(current_user.updated_at).pretty_date}"
       end
 
       div class: "px-4 py-5 sm:p-6" do

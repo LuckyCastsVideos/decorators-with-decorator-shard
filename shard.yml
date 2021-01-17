@@ -29,6 +29,8 @@ dependencies:
   jwt:
     github: crystal-community/jwt
     version: ~> 1.4.2
+  decorator:
+    github: stephendolan/decorator
 
 development_dependencies:
   ameba:
