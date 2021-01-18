@@ -13,7 +13,6 @@ class Me::ShowPage < MainLayout
         h3 "Email: #{current_user.email}"
         h3 "First name: #{current_user.first_name || "Not set"}"
         h3 "Last name: #{current_user.last_name || "Not set"}"
-        creation_date = current_user.created_at
         decorated_date = TimeDecorator.new(current_user.created_at)
         date_string = decorated_date.pretty_date
 
